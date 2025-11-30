@@ -96,11 +96,11 @@
             <div class="skills-container-simple">
                 <div class="skills-category-simple">
                     <h3>Lenguajes</h3>
-                    <p>Python, Ruby, SQL, JavaScript, HTML, CSS</p>
+                    <p>Python, Ruby, C, SQL, JavaScript, HTML, CSS</p>
                 </div>
                 <div class="skills-category-simple">
                     <h3>Frameworks y Librerías</h3>
-                    <p>Ruby on Rails, PyQt6</p>
+                    <p>Ruby on Rails, React, Koa.js, XGBoost, Pandas, NumPy, scikit-learn, Sequelize</p>
                 </div>
                 <div class="skills-category-simple">
                     <h3>Bases de Datos</h3>
@@ -108,7 +108,7 @@
                 </div>
                 <div class="skills-category-simple">
                     <h3>Herramientas y Otros</h3>
-                    <p>Git, GitHub, Linux, macOS, Conceptos de Redes</p>
+                    <p>Git, GitHub, WebSockets, JWT, Docker, Linux, macOS, Conceptos de Redes</p>
                 </div>
             </div>
         </div>
@@ -121,49 +121,52 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assets/img/Wiki_UC.png" alt="Wiki UC Preview">
+                        <img src="assets/img/mineria.png" alt="Tennis Predictor Preview">
                     </div>
                     <div class="project-details">
-                        <h3>Wiki UC <span class="project-date">2025 – Actual</span></h3>
-                        <p>Plataforma colaborativa para universitarios, centrada en compartir información sobre cursos,
-                            profesores y eventos. Permite a los usuarios interactuar mediante un sistema de amistades,
-                            comentarios y chats.</p>
+                        <h3>Predictor de Partidos de Tenis ATP</h3>
+                        <p>Sistema de machine learning para predicción de resultados de tenis profesional ATP, utilizando feature engineering temporal avanzado y algoritmos de clasificación basados en gradient boosting.</p>
                         <ul style="margin-top: -10px; margin-bottom: 1.5rem; text-align: left; font-size: 0.95rem;">
-                            <li style="margin-bottom: 0.5rem;"><strong>Gestión de Contenido:</strong> Roles de
-                                <strong>Editor</strong> para crear artículos/eventos y <strong>Administrador</strong>
-                                para moderar la plataforma.</li>
-                            <li style="margin-bottom: 0.5rem;"><strong>Interactividad:</strong> Sistema de reseñas,
-                                comentarios, amistades y chats directos entre usuarios.</li>
-                            <li><strong>Desafío Técnico:</strong> Implementación de chats en tiempo real, tanto directos
-                                como grupales, utilizando <strong>Action Cable</strong> de Ruby on Rails.</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Feature Engineering Avanzado:</strong> Implementé rolling windows de rendimiento, métricas de momentum y sistema ELO multidimensional con 14 características especializadas.</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Pipeline de Datos:</strong> Desarrollé procesamiento de 42,000+ partidos con prevención de data leakage mediante validación temporal.</li>
+                            <li><strong>Desafío Principal:</strong> Crear features temporales que capturen tendencias (velocity, acceleration) manteniendo integridad de datos históricos.</li>
                         </ul>
                         <div class="project-tech">
-                            <span>Ruby on Rails</span><span>PostgreSQL</span><span>Action
-                                Cable</span><span>HTML/CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://mysite-t35z.onrender.com" target="_blank" class="btn small primary">Ver
-                                Demo</a>
-                            <span class="status-badge development">En Desarrollo</span>
+                            <span>Python</span><span>XGBoost</span><span>Pandas</span><span>NumPy</span><span>scikit-learn</span>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assets/img/DCConejo_Chico.png" alt="Captura del juego Conejo Chico">
+                        <img src="assets/img/WE_PARTY.png" alt="Juego Web We Party">
                     </div>
                     <div class="project-details">
-                        <h3>Conejo Chico <span class="project-date">Finalizado 2023</span></h3>
-                        <p>Implementé lógica de juego, ranking y un <strong>protocolo de comunicación a bajo nivel con
-                                encriptación personalizada</strong> (sockets, chunking/serialización de bytes).
-                            Desarrollé la <strong>interfaz gráfica programáticamente con PyQt6</strong>, manejando
-                            estado y comunicación concurrente. Principal desafío: Diseñar la <strong>arquitectura
-                                cliente-servidor completa y el protocolo de comunicación seguro</strong> desde cero.</p>
+                        <h3>Juego Web Multijugador</h3>
+                        <p>Aplicación web full-stack de juego multijugador estilo tablero para 2-4 jugadores, con comunicación en tiempo real y mecánicas de juego sincronizadas.</p>
+                        <ul style="margin-top: -10px; margin-bottom: 1.5rem; text-align: left; font-size: 0.95rem;">
+                            <li style="margin-bottom: 0.5rem;"><strong>Arquitectura Cliente-Servidor:</strong> Diseñé e implementé arquitectura completa con API RESTful en Koa.js y frontend React.</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Tiempo Real:</strong> Desarrollé sistema de comunicación con WebSockets para sincronización de estado de juego, lobbies y turnos entre múltiples clientes.</li>
+                            <li><strong>Seguridad y Datos:</strong> Implementé autenticación JWT con bcrypt y modelado relacional con Sequelize ORM (PostgreSQL).</li>
+                        </ul>
                         <div class="project-tech">
-                            <span>Python</span><span>PyQt6</span><span>Sockets</span><span>Cliente-Servidor</span>
+                            <span>Node.js</span><span>Koa.js</span><span>React</span><span>PostgreSQL</span><span>Sequelize</span><span>WebSockets</span><span>JWT</span>
                         </div>
-                        <div class="project-links">
-                            <span class="status-badge completed">Finalizado</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/Wiki_UC.png" alt="Wiki UC Preview">
+                    </div>
+                    <div class="project-details">
+                        <h3>Wiki UC</h3>
+                        <p>Plataforma tipo foros para discusiones académicas por curso, permitiendo a los usuarios interactuar mediante un sistema de amistades, comentarios y chats.</p>
+                        <ul style="margin-top: -10px; margin-bottom: 1.5rem; text-align: left; font-size: 0.95rem;">
+                            <li style="margin-bottom: 0.5rem;"><strong>Backend:</strong> Responsable de implementar la lógica principal usando Ruby on Rails.</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Interactividad:</strong> Sistema de reseñas, comentarios, amistades y chats directos entre usuarios.</li>
+                            <li><strong>Desafío Técnico:</strong> Desarrollé sistema de chat en vivo utilizando Action Cable de Ruby on Rails.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Ruby on Rails</span><span>PostgreSQL</span><span>HTML/CSS</span>
                         </div>
                     </div>
                 </div>
@@ -208,7 +211,7 @@
                     <div class="contact-methods">
                         <div class="contact-method">
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:bdomenech@uc.cl">bdomenech@uc.cl</a>
+                            <a href="/cdn-cgi/l/email-protection#385a5c57555d565d5b50784d5b165b54"><span class="__cf_email__" data-cfemail="3557515a58505b50565d7540561b5659">[email&#160;protected]</span></a>
                         </div>
                         <div class="contact-method">
                             <i class="fab fa-github"></i>
@@ -246,18 +249,10 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Benjamín Domenech Ávila. Todos los derechos reservados.</p>
+                <p>2025 Benjamín Domenech Ávila.</p>
                 <div class="social-links">
                     <a href="https://github.com/Benload" target="_blank" aria-label="GitHub"><i
                             class="fab fa-github"></i></a>
                     <a href="https://cl.linkedin.com/in/benjamin-domenech-8a7459328?trk=people-guest_people_search-card"
                         target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+       
